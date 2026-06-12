@@ -1,0 +1,39 @@
+# ── Data: never versioned (mandatory, see scripts/download_data.md and LICENSE-DATA.md) ──
+data/
+*.csv
+*.csv.gz
+*.parquet
+bi/cognos/exports/*
+!bi/cognos/exports/.gitkeep
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.python-version
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── Notebooks ──
+.ipynb_checkpoints/
+
+# ── Docker / secrets ──
+docker/.env
+
+# ── BI temporaries (final .pbix IS versioned per design doc §12.1) ──
+*.pbix.tmp
+~$*.pbix
+*.pbit.tmp
+.pbi/
+*.abf
+
+# ── OS / editor noise ──
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
